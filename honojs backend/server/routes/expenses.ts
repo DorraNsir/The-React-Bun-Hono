@@ -17,7 +17,7 @@ type Expense = {
     const createExpenseSchema=ExpenseSchema.omit({id:true})
 
     const sampleExpenses: Expense[] = [
-        { id: 1, amount: 50, description: 'Groceries' },
+        { id: 1, amount: 5000, description: 'Groceries' },
         { id: 2, amount: 20, description: 'Transport' },
         { id: 3, amount: 100, description: 'Utilities' },
         { id: 4, amount: 100, description: 'Utilities' }

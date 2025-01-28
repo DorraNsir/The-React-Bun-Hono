@@ -5,9 +5,20 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
+    "types": ["bun-types"],
     "paths": {
-      "~/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "@server/*":["../server/*"]
+    },
+    "composite": true
   }
 }
